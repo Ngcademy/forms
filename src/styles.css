@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+.error label {
+    color: red;
+}
+
+.error input[type="text"] {
+    border: 1px solid red;
+}

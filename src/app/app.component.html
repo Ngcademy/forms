@@ -1,0 +1,13 @@
+<h3>Ngcademy Forms Module</h3>
+<p>An extendable forms module.</p>
+<hr />
+<h5>Example Form</h5>
+<form [formGroup]="formGroup$ | async" [class.error]="hasSubmitted$ | async" reactiveForm>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" formControlName="firstName" placeholder="Enter first name" />
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" formControlName="lastName" placeholder="Enter last name" />
+
+    <input type="submit" value="Submit" />
+</form>
